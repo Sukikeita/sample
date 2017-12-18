@@ -59,15 +59,15 @@
   defined, from the following list:
   属性的值由第一次定义它的地方决定
 
-  * Definitions on the "ant" command line (ant -Dfoo=bar compile).--在命令行中指定属性值；
+  * Definitions on the "ant" command line (ant -Dfoo=bar compile).在命令行中指定属性值；
 
   * Definitions from a "build.properties" file in the top level
-    source directory of this application.--在源代码目录中的顶级目录的build.properties中指定属性值；
+    source directory of this application.在源代码目录中的顶级目录的build.properties中指定属性值；
 
   * Definitions from a "build.properties" file in the developer's
-    home directory.--本地家目录中的build.properties中指定属性值；
+    home directory.本地家目录中的build.properties中指定属性值；
 
-  * Default definitions in this build.xml file.--在build.xml中指定属性值
+  * Default definitions in this build.xml file.在build.xml中指定属性值
 
   You will note below that property values can be composed based on the
   contents of previously defined properties.  This is a powerful technique
@@ -147,9 +147,9 @@
   your application will depend.  In general, these values will be used for
   two purposes:
   定义外部依赖的原因：
-  * Inclusion on the classpath that is passed to the Javac compiler--传给Javac编译器
+  * Inclusion on the classpath that is passed to the Javac compiler 传给Javac编译器
   * Being copied into the "/WEB-INF/lib" directory during execution
-    of the "deploy" target.--拷贝到WEB-INF/lib目录
+    of the "deploy" target.拷贝到WEB-INF/lib目录
 
   Because we will automatically include all of the Java classes that Tomcat
   exposes to web applications, we will not need to explicitly list any of those
