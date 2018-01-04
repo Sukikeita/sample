@@ -67,7 +67,7 @@ public class EbankReplace {
 				filePath = filePath.substring(filePath.lastIndexOf("/") + 1).replace(".biz",".xml");
 				filelist.add(separator + projectName + "/WebContent/WEB-INF/bizs/" + factoryName + "/operations/" + filePath);
 			}else if(filePath.indexOf(separator + projectName + "/designFiles/mvcs/" + factoryName + "/")!=-1 && filePath.endsWith(".mvc")){
-				filePath = filePath.substring(filePath.lastIndexOf("/") + 1).replace(".biz",".xml");
+				filePath = filePath.substring(filePath.lastIndexOf("/") + 1).replace(".mvc",".xml");
 				filelist.add(separator + projectName + "/WebContent/WEB-INF/mvcs/" + factoryName + "/actions/" + filePath);
 			}else if (filePath.indexOf(separator + projectName + "/JavaSource/")!=-1) {
 				filelist.add(filePath.replace(separator + projectName + "/JavaSource/", separator + projectName + "/WebContent/WEB-INF/classes/").replace(".java", ".class"));
