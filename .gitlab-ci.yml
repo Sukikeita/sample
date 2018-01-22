@@ -1,0 +1,26 @@
+before_script:
+after_script:
+
+#定义阶段
+stages:
+  - 定义阶段
+
+#定义作业
+job_name:
+  script:
+    - rake spec
+    - coverage
+  stage: test
+  only:
+    - master
+  except:
+    - develop
+  tags:
+    - ruby
+    - postgres
+  allow_failure: true
+ 
+#定义变量
+variables:
+  用于设置作业的环境变量：
+  DATABASE_URL: "postgres://postgres@postgres/my_database"
